@@ -71,6 +71,6 @@ group :test do
   gem "webdrivers"
 end
 
-
+gem 'pry-byebug', '~> 3.9'
 
 gem "figaro", "~> 1.2"
