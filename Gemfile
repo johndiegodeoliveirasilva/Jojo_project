@@ -77,3 +77,7 @@ gem 'pry-byebug', '~> 3.9'
 gem "figaro", "~> 1.2"
 
 gem "faker", "~> 2.19"
+
+gem "cssbundling-rails", "~> 1.0"
+
+gem "jsbundling-rails", "~> 1.0"
