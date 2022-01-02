@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Cidade</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @exports.each do |export| %>
+    <tr>
+      <th><%= export.id%></th>
+      <td><%= export.name%></td>
+      <td><%= export.cidade.nome %></td>
+      <td><%= export.cidade.estado.nome  %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
