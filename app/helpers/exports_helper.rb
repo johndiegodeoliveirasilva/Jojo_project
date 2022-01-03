@@ -1,5 +1,5 @@
 module ExportsHelper
   def states
-    Estado.select(:id, :nome).order(:nome)
+    Estado.order(:nome).pluck(:nome, :id)
   end
 end
