@@ -1,5 +1,6 @@
 class ExportsController < ApplicationController
   def index
-    @pagy, @exports = pagy(Person.includes(cidade: :estado))
+    @q = Person.ransack(params[:q])
+    @pagy, @exports = pagy(@q.result(distinct: true).includes(cidade: :estado))
   end
 end

@@ -83,3 +83,5 @@ gem "cssbundling-rails", "~> 1.0"
 gem "jsbundling-rails", "~> 1.0"
 
 gem "pagy", "~> 5.6"
+
+gem "ransack", "~> 2.5"
