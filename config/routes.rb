@@ -4,6 +4,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "exports#index"
-  resources :exports, only: [:index]
+  resources :exports, only: [:index] do
+    collection do
+      get :export_xls
+    end
+  end
+
   mount Sidekiq::Web => '/sidekiq'
 end
