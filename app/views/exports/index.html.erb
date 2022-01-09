@@ -1,7 +1,7 @@
 <div class="container">
   <%= render 'search_exports' %>
   <%= render 'main' %>
-  <div class="center">
-    <%= render 'shared/paginate' %>
-  </div>
+  <% byebug %>
+  <%= link_to "Exports", export_xls_exports_path, method: :post %>
+  <%= render 'shared/paginate' %>
 </div>
